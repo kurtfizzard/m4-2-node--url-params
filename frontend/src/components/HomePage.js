@@ -11,6 +11,7 @@ const HomePage = () => {
     fetch(`/top50/artist`)
       .then((res) => res.json())
       .then((json) => {
+        console.log(json);
         setArtists(json.data);
       });
   }, []);
